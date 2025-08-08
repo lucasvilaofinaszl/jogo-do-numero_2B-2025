@@ -17,4 +17,7 @@
 
     if (palpiteUsuario === numero Aleatorio) {
         ultimoResultado.textContent = "Parabens! Voce Acertou!";.
+        ultimoResultado.style.backgroundColor = "green";
+        baixoOuAlto.textContent = "";
+        finalizarJogo();
     }
