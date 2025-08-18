@@ -20,4 +20,45 @@
         ultimoResultado.style.backgroundColor = "green";
         baixoOuAlto.textContent = "";
         finalizarJogo();
+    } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    contagemPalpites++;
+     campoPalpite.value = "";
+     campoPalpite.focus();
+  } 
+
+envioPalpite.addEventListener('click', verificarPalpite);
+
+function finalizarJogo() {
+ campoPalpite.disabled = true;
+  envioPalpite.disabled = true;
+  botaoReiniciar = document.createElement('button')
+  document.body.appendChild(botaoReiniciar);
+  botaoReiniciar.textContent = 'Reiniciar Jogo';
+  botaoReiniciar.classList.add('botaoReiniciar');
+  document.body.appendChild(botaoReiniciar);
+  botaoReiniciar.addEventListener('clik', reiniciarJogo);
     }
+
+function reiniciarJogo() {
+  contagemPalpites = 1;
+  const paragrafosReiniciar = document.querySelectorAll('.paragrafosResultado p')
+  for (const paragrafoReiniciar of paragrafosReiniciar) {
+    paragrafosReiniciar.textcontent = "";
+  }
+    
+}
+
+    
