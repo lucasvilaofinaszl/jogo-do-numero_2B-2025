@@ -88,7 +88,12 @@ ultimoResultado.correto {
     font-size: 1.2em;
     cursor: pointer;
     transsition: background-color 0.3s ease;
+}
 
+.botaoReiniciar:hover {
+ background-color: #0056b3;
+}
+    
 
 
 
